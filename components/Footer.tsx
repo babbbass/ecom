@@ -17,9 +17,17 @@ export function Footer() {
           <Logo />
           <div className='flex justify-start w-full md:w-auto'>
             <ul className='flex flex-col gap-4'>
-              <li>Nous Contacter</li>
-              <li>Termes et conditions</li>
-              <li>Politiques de confidentialité</li>
+              <li>
+                <Link href={"/contact"}>Nous Contacter</Link>
+              </li>
+              <li>
+                <Link href={"/termes"}>Termes et conditions</Link>
+              </li>
+              <li>
+                <Link href={"/confidentialite"}>
+                  Politiques de confidentialité
+                </Link>
+              </li>
             </ul>
           </div>
         </div>

@@ -4,6 +4,7 @@ import "./globals.css"
 import { Footer } from "@/components/Footer"
 import { Header } from "@/components/Header"
 import { PageWrapper } from "@/components/PageWrapper"
+import { Toaster } from "@/components/ui/sonner"
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -34,6 +35,7 @@ export default function RootLayout({
       >
         <Header user={user} />
         <PageWrapper>{children}</PageWrapper>
+        <Toaster closeButton />
         <Footer />
       </body>
     </html>
